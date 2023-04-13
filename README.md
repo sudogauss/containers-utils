@@ -7,3 +7,4 @@ It also contains useful templates.
 ## List of available services:
 
 - wiki
+- standalone-builder (statically linked, self-contained executables for different architectures)

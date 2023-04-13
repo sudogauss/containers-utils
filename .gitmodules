@@ -1,0 +1,3 @@
+[submodule "standalone-builder/fakechroot"]
+	path = standalone-builder/sources/fakechroot
+	url = git@github.com:dex4er/fakechroot.git
