@@ -1,0 +1,28 @@
+name: Cross Compilers Artifacts
+on:
+  push:
+    branches:
+      - compilers
+jobs:
+  compilers_artifacts:
+    strategy:
+      matrix:
+        archs: ["aarch64"]
+    runs-on: ubuntu-latest
+    container:
+      image: './standalone-builder/Dockerfile'
+      volumes:
+        - ./cross-compilers:/cross-compilers
+    env:
+      working-directory: ./standalone-builder
+
+    defaults:
+      run:
+        working-directory: ${{env.working-directory}}
+
+    steps:
+      - uses: jirutka/setup-alpine@v1
+        with:
+          branch: v3.15
+      - run: cat /etc/alpine-release
+        shell: alpine.sh {0}

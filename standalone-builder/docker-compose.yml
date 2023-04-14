@@ -1,9 +1,10 @@
 version: "3"
 services:
-  arm64v8-standalone-builder:
-    container_name: arm64v8-standalone-builder
+  standalone-builder:
+    container_name: standalone-builder
     build:
-      context: ./images/arm64v8
+      context: .
       dockerfile: Dockerfile
     volumes:
       - ./sources:/sources
+      - ./cross-compilers:/cross-compilers
