@@ -1,0 +1,51 @@
+__xstat.lo: __xstat.c \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/stdc-predef.h \
+ ../config.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/sys/stat.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/features.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/bits/alltypes.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/bits/stat.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/limits.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/bits/limits.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/stdlib.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/alloca.h \
+ libfakechroot.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/errno.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/bits/errno.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/string.h \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/strings.h rel2abs.h \
+ rel2absat.h
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/stdc-predef.h:
+
+../config.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/sys/stat.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/features.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/bits/alltypes.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/bits/stat.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/limits.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/bits/limits.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/stdlib.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/alloca.h:
+
+libfakechroot.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/errno.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/bits/errno.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/string.h:
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/strings.h:
+
+rel2abs.h:
+
+rel2absat.h:

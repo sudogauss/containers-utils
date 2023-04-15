@@ -3,7 +3,7 @@ services:
   standalone-builder:
     container_name: standalone-builder
     build:
-      context: .
+      context: ./docker
       dockerfile: Dockerfile
     volumes:
       - ./sources:/sources

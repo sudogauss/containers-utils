@@ -1,0 +1,7 @@
+__readlinkat_chk.lo: __readlinkat_chk.c \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/stdc-predef.h \
+ ../config.h
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/stdc-predef.h:
+
+../config.h:

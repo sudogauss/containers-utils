@@ -1,0 +1,7 @@
+__openat_2.lo: __openat_2.c \
+ /cross-compilers/aarch64/aarch64-linux-musl/include/stdc-predef.h \
+ ../config.h
+
+/cross-compilers/aarch64/aarch64-linux-musl/include/stdc-predef.h:
+
+../config.h:

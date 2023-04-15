@@ -1,0 +1,50 @@
+diff -Naur ../../sources/fakechroot/src/fopen64.c src/fopen64.c
+--- ../../sources/fakechroot/src/fopen64.c	2023-04-14 15:42:04.866361903 +0200
++++ src/fopen64.c	2023-04-14 15:41:17.217975037 +0200
+@@ -33,7 +33,7 @@
+     char fakechroot_buf[FAKECHROOT_PATH_MAX];
+     debug("fopen64(\"%s\", \"%s\")", path, mode);
+     expand_chroot_path(path);
+-    return nextcall(fopen64)(path, mode);
++    return nextcall(fopen)(path, mode);
+ }
+ 
+ #else
+diff -Naur ../../sources/fakechroot/src/freopen64.c src/freopen64.c
+--- ../../sources/fakechroot/src/freopen64.c	2023-04-13 22:12:43.454232477 +0200
++++ src/freopen64.c	2023-04-14 15:42:37.514625144 +0200
+@@ -33,7 +33,7 @@
+     char fakechroot_buf[FAKECHROOT_PATH_MAX];
+     debug("freopen64(\"%s\", \"%s\", &stream)", path, mode);
+     expand_chroot_path(path);
+-    return nextcall(freopen64)(path, mode, stream);
++    return nextcall(freopen)(path, mode, stream);
+ }
+ 
+ #else
+diff -Naur ../../sources/fakechroot/src/libfakechroot.h src/libfakechroot.h
+--- ../../sources/fakechroot/src/libfakechroot.h	2023-04-14 15:42:04.866361903 +0200
++++ src/libfakechroot.h	2023-04-14 15:41:17.205974939 +0200
+@@ -32,6 +32,10 @@
+ 
+ #define debug fakechroot_debug
+ 
++#ifndef _STAT_VER
++#define _STAT_VER 0
++#endif
++
+ 
+ #ifdef HAVE___ATTRIBUTE__VISIBILITY
+ # define LOCAL __attribute__((visibility("hidden")))
+diff -Naur ../../sources/fakechroot/src/strlcpy.h src/strlcpy.h
+--- ../../sources/fakechroot/src/strlcpy.h	2023-04-14 15:42:04.866361903 +0200
++++ src/strlcpy.h	2023-04-14 15:41:17.205974939 +0200
+@@ -23,7 +23,7 @@
+ 
+ #define strlcpy __strlcpy
+ 
+-#include <sys/cdefs.h>
++#include <stdint.h>
+ #include <sys/types.h>
+ 
+ size_t strlcpy(char *, const char *, size_t);
