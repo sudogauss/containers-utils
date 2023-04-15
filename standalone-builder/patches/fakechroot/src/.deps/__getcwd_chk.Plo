@@ -1,7 +1,0 @@
-__getcwd_chk.lo: __getcwd_chk.c \
- /cross-compilers/aarch64/aarch64-linux-musl/include/stdc-predef.h \
- ../config.h
-
-/cross-compilers/aarch64/aarch64-linux-musl/include/stdc-predef.h:
-
-../config.h:

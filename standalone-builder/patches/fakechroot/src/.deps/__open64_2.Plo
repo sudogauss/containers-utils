@@ -1,7 +1,0 @@
-__open64_2.lo: __open64_2.c \
- /cross-compilers/aarch64/aarch64-linux-musl/include/stdc-predef.h \
- ../config.h
-
-/cross-compilers/aarch64/aarch64-linux-musl/include/stdc-predef.h:
-
-../config.h:
