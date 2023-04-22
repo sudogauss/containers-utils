@@ -2,6 +2,8 @@
 
 This container-util is used to build musl cross-compilers for linux alpine and then use them to cross-compile standalone executables.
 
+# Create your standalone executable
+
 ## Run a container
 
 To start a container just run:
@@ -30,3 +32,20 @@ Go to **cross-compilers/musl-cross-make** and run:
 ## Build executable
 
 To build executable you must configure its build system (often make or automake), choose a good compiler, etc...
+
+# Utils
+
+## Submodules
+
+
+
+To remove a submodule you need to:
+
+- Delete the relevant section from the .gitmodules file.
+- Stage the .gitmodules changes git add .gitmodules
+- Delete the relevant section from .git/config.
+- Run git rm --cached path_to_submodule (no trailing slash).
+- Run rm -rf .git/modules/path_to_submodule (no trailing slash).
+- Commit git commit -m "Removed submodule "
+- Delete the now untracked submodule files rm -rf path_to_submodule
+

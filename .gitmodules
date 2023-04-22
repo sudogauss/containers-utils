@@ -4,3 +4,6 @@
 [submodule "standalone-builder/cross-compilers/musl-cross-make"]
 	path = standalone-builder/cross-compilers/musl-cross-make
 	url = git@github.com:richfelker/musl-cross-make.git
+[submodule "standalone-builder/cross-compilers/addons/musl-fts"]
+	path = standalone-builder/cross-compilers/addons/musl-fts
+	url = git@github.com:void-linux/musl-fts.git

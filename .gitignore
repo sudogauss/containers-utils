@@ -1,5 +1,11 @@
+# ===== standalone-builder begin =====
+
+# ===== standalone-builder end =====
+
 # Cross-compilers
 
 */*cross-compilers/aarch64
 
 # Executables
+
+*/*sources/executables
